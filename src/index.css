@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#upperCircle {
+  width: 60rem;
+  height: 60rem;
+  background-color: #00689a;
+  border-radius: 50%;
+  position: absolute;
+  left: -20rem;
+  top: -48rem;
+  z-index: -1;
+}
+.Fonts-Poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translatex(-25%);
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: none;
+    animation-timing-function: linear;
+  }
+}
+.animate-horizontal {
+  animation: bounce 1s infinite;
+}
+@media (width<1430px) {
+  html {
+    font-size: 9px;
+  }
+  body {
+    width: 100%;
+  }
+}
+@media (width<1000px) {
+  html {
+    font-size: 7px;
+  }
+  body {
+    width: 102%;
+    border: 1px solid black;
+  }
+}
+@media (width<750px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (width<650px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (width<540px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (width<430px) {
+  html {
+    font-size: 3px;
+  }
+  #project-page {
+    width: 102%;
+    height: 100vh;
+    margin-top: 5rem;
+    overflow-y: auto;
+  }
+}

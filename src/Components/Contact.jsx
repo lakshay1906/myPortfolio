@@ -1,0 +1,38 @@
+import React from "react";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+
+const Contact = () => {
+  return (
+    <div
+      id="contact-detail"
+      className=" w-[55rem] ml-[5.5rem] mt-8 flex justify-between"
+    >
+      <div
+        id="phone_num"
+        className="w-[21rem] flex justify-between items-center"
+      >
+        <img
+          id="telephone-img"
+          src="./src/assets/telephone.png"
+          className="w-16"
+        />
+        <span id="num" className="text-[2rem]">
+          <h5 className="text-[2rem]">Phone No. :</h5>
+          <h4 className="text-[2.1rem]">+91 9813173434</h4>
+        </span>
+      </div>
+      <div
+        id="email"
+        className="text-[2rem] w-[32rem] flex justify-between items-center"
+      >
+        <MdOutlineAlternateEmail size={"4rem"} color="#00689a" />
+        <span>
+          <h5 className="text-[2rem]">Email :</h5>
+          <h4 className="text-[2.1rem]">lakshaybhati1906@gmail.com</h4>
+        </span>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
