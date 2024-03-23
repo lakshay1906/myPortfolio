@@ -41,7 +41,7 @@ const Content = () => {
         <div className="right-part ">
           <img
             id="profile-img"
-            src="./src/assets/Circle_Profile_img.png"
+            src="https://github.com/lakshay1906/myPortfolio/blob/main/src/assets/Circle_Profile_img.png?raw=true"
             alt="Dashing Me..!!"
             className=" w-[60rem] absolute -top-[3rem] -right-32 hover:scale-110 transition-all rounded-full overflow-hidden -z-10"
           />
