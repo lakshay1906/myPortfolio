@@ -14,18 +14,15 @@ const Project_card = (props) => {
         <div className="underline">Description:</div>{" "}
         <div className="ml-56">{props.desc}</div>
       </p>
-      <div className="text-4xl">
-        <div className="underline">Source Code:</div>
-        <div className="mt-5 ml-56">
-          <a
-            id="sourceCode"
-            href={props.code}
-            target="_blank"
-            className=" text-[#00689a] hover:text-[#21356b] hover:text-[2.35rem] transition-all"
-          >
-            {props.code}
-          </a>
-        </div>
+      <div className="mt-2 ml-56 text-[2.5rem]">
+        <a
+          id="sourceCode"
+          href={props.code}
+          target="_blank"
+          className=" text-[#00689a] hover:text-[#21356b] hover:text-[2.8rem] transition-all"
+        >
+          Source Code
+        </a>
       </div>
       <div className="text-4xl underline">
         Demo:

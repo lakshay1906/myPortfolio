@@ -5,6 +5,10 @@ export default {
     extend: {
       animation: {
         "spin-slow": "spin 2s linear infinite",
+        // "bar-animate": "animate"
+      },
+      scale: {
+        115: "1.15",
       },
     },
   },

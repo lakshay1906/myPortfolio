@@ -46,17 +46,13 @@ html {
   html {
     font-size: 9px;
   }
-  body {
+  /* body {
     width: 100%;
-  }
+  } */
 }
 @media (width<1000px) {
   html {
     font-size: 7px;
-  }
-  body {
-    width: 102%;
-    border: 1px solid black;
   }
 }
 @media (width<750px) {
@@ -76,12 +72,15 @@ html {
 }
 @media (width<430px) {
   html {
-    font-size: 3px;
+    font-size: 4px;
   }
   #project-page {
     width: 102%;
     height: 100vh;
     margin-top: 5rem;
     overflow-y: auto;
+  }
+  footer {
+    height: 100%;
   }
 }

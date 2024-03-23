@@ -7,9 +7,13 @@ function App() {
   console.log("Jay Radhe Jay Radhe Jay shree krishna bolo Jay Radhe");
   return (
     <>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <div className="relative">
+        <div className="">
+          <Navbar />
+          <Outlet />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }

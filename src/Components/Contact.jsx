@@ -1,5 +1,6 @@
 import React from "react";
 import { MdOutlineAlternateEmail } from "react-icons/md";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Contact = () => {
   return (
@@ -11,11 +12,7 @@ const Contact = () => {
         id="phone_num"
         className="w-[21rem] flex justify-between items-center"
       >
-        <img
-          id="telephone-img"
-          src="./src/assets/telephone.png"
-          className="w-16"
-        />
+        <FiPhoneCall size={"3.8rem"} color="#00689a" />
         <span id="num" className="text-[2rem]">
           <h5 className="text-[2rem]">Phone No. :</h5>
           <h4 className="text-[2.1rem]">+91 9813173434</h4>

@@ -7,7 +7,7 @@ const MinorProjects = () => {
       <div>
         <ul
           id="all-projects"
-          className=" w-full my-5 mb-10 h-6/6 px-10 pt-5 overflow-y-auto flex flex-col gap-20 relative shadow-inner"
+          className=" w-[80%] mb-10 px-10 pt-5 flex flex-col gap-20 shadow-inner ml-[30rem]"
         >
           <li className="">
             <Project_card
