@@ -10,10 +10,10 @@ const Project_card = (props) => {
         <div className="underline">Concepts Used:</div>{" "}
         <div className="ml-56 mt-2">{props.tech}</div>
       </h2>
-      <p className="text-4xl Fonts-Poppins leading-tight">
+      <div className="text-4xl Fonts-Poppins leading-tight">
         <div className="underline">Description:</div>{" "}
         <div className="ml-56">{props.desc}</div>
-      </p>
+      </div>
       <div className="mt-2 ml-56 text-[2.5rem]">
         <a
           id="sourceCode"

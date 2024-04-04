@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,20 +15,21 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
 }
-#upperCircle {
-  width: 60rem;
-  height: 60rem;
-  background-color: #00689a;
-  border-radius: 50%;
-  position: absolute;
-  left: -20rem;
-  top: -48rem;
-  z-index: -1;
-}
 .Fonts-Poppins {
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  overflow-x: hidden;
+}
+table,
+tr {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 1rem;
+  border: 1px solid black;
+}
 @keyframes bounce {
   0%,
   100% {
@@ -46,18 +48,30 @@ html {
   html {
     font-size: 9px;
   }
-  /* body {
-    width: 100%;
-  } */
 }
 @media (width<1000px) {
   html {
     font-size: 7px;
   }
 }
-@media (width<750px) {
+@media (width<768px) {
   html {
     font-size: 6px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer #aboutMe {
+    width: 90%;
+    height: auto;
+  }
+  footer #linkBox {
+    width: 50%;
+    align-self: flex-start;
+    margin-left: 6rem;
+  }
+  footer #summary {
+    font-size: 2.9rem;
   }
 }
 @media (width<650px) {
@@ -72,15 +86,21 @@ html {
 }
 @media (width<430px) {
   html {
-    font-size: 4px;
+    font-size: 3px;
   }
-  #project-page {
-    width: 102%;
-    height: 100vh;
-    margin-top: 5rem;
-    overflow-y: auto;
+}
+@media (width<320px) {
+  html {
+    font-size: 3px;
   }
-  footer {
-    height: 100%;
+  .mb-flex-wrap {
+    flex-wrap: wrap;
+  }
+  #contact-detail {
+    flex-direction: column;
+  }
+  #content #name {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -1,34 +1,27 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
 
 const GetEmail = () => {
   const form = useRef();
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: "Lakshay",
-      message: message,
-    };
-
     emailjs
-      .sendForm("service_1cxdr0r", "template_2d7ym2v", templateParams, {
-        publicKey: "B0h7MNQ6ST48kHj2W",
-      })
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
-          alert("SUCCESS!");
+          alert("Message Sent!");
         },
         (error) => {
           alert("FAILED...", error.text);
-          console.log(form.current, error, error.text);
         }
       );
   };
@@ -39,36 +32,33 @@ const GetEmail = () => {
       onSubmit={sendEmail}
       className=" flex flex-col gap-y-16 w-[90%] items-center"
     >
-      <div className="flex gap-x-4 ">
-        {/* <label className="text-4xl">Name</label> */}
+      <div className="flex gap-x-4 w-full">
         <input
           type="text"
-          name="user_name"
-          className="text-4xl text-black p-2"
-          onChange={(e) => setName(e.target.value)}
+          name="from_name"
+          className="text-4xl text-black w-[49%] p-2"
           placeholder="Name"
+          required
         />
-        {/* <label className="text-4xl">Email</label> */}
         <input
           type="email"
-          name="user_email"
-          className="text-4xl text-black p-2 w-full"
-          onChange={(e) => setEmail(e.target.value)}
+          name="from_email"
+          className="text-4xl text-black p-2 w-[49%]"
           placeholder="Email"
+          required
         />
       </div>
       <input
-        type="email"
-        name="user_email"
+        type="number"
+        name="from_phoneNumber"
         className="text-4xl text-black p-2  w-[90%] "
-        onChange={(e) => setEmail(e.target.value)}
         placeholder="Phone Number"
       />
       <textarea
         name="message"
         className="text-4xl text-black p-2 w-[80%]"
-        onChange={(e) => setMessage(e.target.value)}
         placeholder="Message"
+        required
       />
       <input
         type="submit"
@@ -80,3 +70,9 @@ const GetEmail = () => {
 };
 
 export default GetEmail;
+
+// create only one useState to clear the input box
+
+// OR
+
+// Comment 8th line

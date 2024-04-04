@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div
       id="contact-detail"
-      className=" w-[55rem] ml-[5.5rem] mt-8 flex justify-between"
+      className=" w-[55rem] mx-[5.5rem] mt-8 flex justify-between mb-flex-wrap "
     >
       <div
         id="phone_num"

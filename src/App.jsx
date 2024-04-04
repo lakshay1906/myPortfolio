@@ -8,10 +8,8 @@ function App() {
   return (
     <>
       <div className="relative">
-        <div className="">
-          <Navbar />
-          <Outlet />
-        </div>
+        <Navbar />
+        <Outlet />
         <Footer />
       </div>
     </>

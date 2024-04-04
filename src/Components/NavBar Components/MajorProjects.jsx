@@ -5,9 +5,12 @@ const MajorProjects = () => {
   return (
     <>
       <div>
+        <h1 className="text-[3.3rem] font-semibold m-5 ml-16 underline-offset-8 underline">
+          Major Projects :
+        </h1>
         <ul
           id="all-projects"
-          className=" w-[80%] mb-10 px-10 pt-5 flex flex-col gap-20 shadow-inner ml-[30rem]"
+          className=" w-[98%] mb-10 px-10 pt-5 flex flex-col gap-20  shadow-3xl mx-auto"
         >
           <li className="">
             <Project_card

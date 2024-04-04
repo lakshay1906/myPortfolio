@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import { PiArrowFatLinesRightBold } from "react-icons/pi";
 import { RiReactjsLine } from "react-icons/ri";
 import Skills from "./Skills";
+import OtherInfo from "./OtherInfo";
 
 const Content = () => {
   return (
@@ -14,9 +15,10 @@ const Content = () => {
             id="about"
             className=" mt-20 text-[5rem] leading-[6rem] font-bold ml-20 relative flex flex-col"
           >
-            <h1 id="name">
-              I'm <span className="text-[#00689a]">Lakshay Bhati</span>
-            </h1>
+            <div id="name">
+              <span>I'm</span>{" "}
+              <span className="text-[#00689a]">Lakshay Bhati</span>
+            </div>
             <div id="post">
               <h1 id="react" className="flex items-center gap-5 text-[#00689a]">
                 React
@@ -42,13 +44,26 @@ const Content = () => {
         <div className="right-part ">
           <img
             id="profile-img"
-            src="https://github.com/lakshay1906/myPortfolio/blob/main/src/assets/Circle_Profile_img.png?raw=true"
+            src="./src/assets/Circle_Profile_img (4).png"
             alt="Dashing Me..!!"
             className=" w-[60rem] absolute -top-[3rem] -right-32 hover:scale-110 transition-all rounded-full overflow-hidden -z-10"
           />
         </div>
       </div>
+      <div
+        id="seperator"
+        className="w-[90%] mx-auto h-[0.62rem] bg-slate-500 mt-56 rounded-2xl"
+      ></div>
       <Skills />
+      <div
+        id="seperator"
+        className="w-[90%] mx-auto h-[0.62rem] bg-slate-500 mb-24 mt-10 rounded-2xl"
+      ></div>
+      <OtherInfo />
+      <div
+        id="seperator"
+        className="w-[90%] mx-auto h-[0.62rem] bg-slate-500 mb-24 mt-10 rounded-2xl"
+      ></div>
     </>
   );
 };
