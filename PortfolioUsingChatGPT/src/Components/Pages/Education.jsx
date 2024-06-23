@@ -64,7 +64,7 @@ function Education() {
             eleClass={"internship"}
             logo={"https://softsynthsoftware.com/assets/images/whitelogo.png"}
             logoTitle={"Company Logo"}
-            logoWidth={"w-36 py-2 px-1 bg-black "}
+            logoWidth={"w-36 py-2 px-1 bg-black"}
             collegeName={"Softsynth Software Solutions, Sector-9 Faridabad"}
             degreeName={"React Web Development"}
             duration={"October 2023 - April 2024"}
@@ -99,9 +99,7 @@ function Education() {
           <Card
             divClass={"justify-self-start hover:-translate-x-5"}
             eleClass={"twelfth-class"}
-            logo={
-              "https://scontent.fdel27-4.fna.fbcdn.net/v/t39.30808-1/301661059_413174110912143_2089272977160406831_n.png?stp=c0.0.180.180a_dst-png&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=N7yn9ntr11oQ7kNvgFUM9Cj&_nc_ht=scontent.fdel27-4.fna&oh=00_AfAp6z7_woFUu2eYn0Iu0F_3LWky3CeZTYGuvMB5atPykw&oe=6638F943"
-            }
+            logo={"../assets/school_logo.png"}
             logoTitle={"School Logo"}
             logoWidth={"w-32 px-1 py-1 "}
             collegeName={"DAV Public School, Palwal Haryana"}
@@ -114,9 +112,7 @@ function Education() {
           <Card
             divClass={"justify-self-end hover:translate-x-5"}
             eleClass={"tenth-class"}
-            logo={
-              "https://scontent.fdel27-4.fna.fbcdn.net/v/t39.30808-1/301661059_413174110912143_2089272977160406831_n.png?stp=c0.0.180.180a_dst-png&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=N7yn9ntr11oQ7kNvgFUM9Cj&_nc_ht=scontent.fdel27-4.fna&oh=00_AfAp6z7_woFUu2eYn0Iu0F_3LWky3CeZTYGuvMB5atPykw&oe=6638F943"
-            }
+            logo={"../assets/school_logo.png"}
             logoTitle={"School Logo"}
             logoWidth={"w-32 px-1 py-1 "}
             collegeName={"DAV Public School, Palwal Haryana"}

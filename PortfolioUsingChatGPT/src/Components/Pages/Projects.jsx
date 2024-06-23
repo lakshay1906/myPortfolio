@@ -53,6 +53,14 @@ function Projects() {
                 link={"https://online-dukaan.netlify.app/"}
               />
               <TiltComponent
+                videoLink="./assets/quiz_app.mp4"
+                link={"https://quizapp1906.netlify.app/"}
+              />
+              <TiltComponent
+                videoLink="./assets/spotify_app.mp4"
+                link={"https://spotifyclone1906.netlify.app/"}
+              />
+              <TiltComponent
                 videoLink="./assets/Weather-app.mp4"
                 link={
                   "https://github.com/lakshay1906/Projects/tree/main/Weather-app"

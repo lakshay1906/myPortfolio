@@ -66,7 +66,7 @@ function Navbar({ scrolled }) {
           ></div>
         </div>
         {toggleMenu && (
-          <div className="vertical-menu w-full bg-white text-black h-[93.65vh] fixed left-0 bottom-0 ">
+          <div className="vertical-menu w-full bg-white text-black h-[94.3vh] fixed left-0 bottom-0 ">
             <ul className="w-full h-full flex flex-col items-center justify-center">
               <li className="hover-Effect">
                 <a href="#home" className="hover:text-gray-200">
